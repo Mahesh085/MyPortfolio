@@ -1,5 +1,5 @@
 FROM nginx
 MAINTAINER Author Uma Mahesh
 LABEL This is my Portfolio 
-COPY script.js style.css index.html /usr/share/nginx/html
+COPY style.css script.js index.html /usr/share/nginx/html
 
