@@ -1,5 +1,9 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  alert("Thank you for contacting me! I'll get back to you soon.");
-  this.reset();
+// Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
